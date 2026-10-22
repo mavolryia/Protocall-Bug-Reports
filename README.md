@@ -70,8 +70,6 @@ Either the app should enforce a reasonable character limit on the room name fiel
 ### Actual result
 The app displays a loading spinner indefinitely and becomes completely unresponsive: no error message, no timeout, no way to cancel the action. The only way to recover is to force-close and reopen the app.
 
-> _Note: restored from the Description — the Actual result field is not visible in the source screenshot._
-
 ### Environment
 
 | Field | Value |
