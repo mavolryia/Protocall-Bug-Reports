@@ -7,6 +7,7 @@ Bug reports submitted to the **Protocall Bug Bounty Program** (messenger [protoc
 | 1 | [No permission prompt when tapping camera icon with denied camera access](#bug-1-no-permission-prompt-when-tapping-camera-icon-with-denied-camera-access) | Aug 4 | Android |
 | 2 | [App freezes indefinitely when saving a room with an extremely long name (300+ characters), requires force close](#bug-2-app-freezes-indefinitely-when-saving-a-room-with-an-extremely-long-name-300-characters-requires-force-close) | Aug 5 | Android |
 | 3 | [Tapping on the time field re-opens the date calendar instead of the time picker when editing a scheduled room](#bug-3-tapping-on-the-time-field-re-opens-the-date-calendar-instead-of-the-time-picker-when-editing-a-scheduled-room) | — | Android |
+| 4 | [No download link on invite landing page for non-installed users](#bug-4-no-download-link-on-invite-landing-page-for-non-installed-users) | Aug 5 | Android |
 
 ---
 
@@ -126,3 +127,37 @@ Always
 ### Media
 
 <img src="images/bug-03-media.png" alt="Bug 3 — time picker in the room scheduling flow (17:07)" width="200">
+
+---
+
+## Bug 4: No download link on invite landing page for non-installed users
+
+### Title
+No download link on invite landing page for non-installed users
+
+### Description
+Invite link landing page (for users without the app installed) lacks a clear call-to-action or download link.
+
+### Steps to Reproduce
+1. Create a scheduled room and generate an invite link
+2. Open the invite link on a device where Protocall is not installed
+3. Observe the landing page shown in the browser
+
+### Expected result
+The landing page shows a clear call-to-action with a link to download the app, so the invited user can install Protocall and join the room.
+
+### Actual result
+The landing page has no download link and no clear call-to-action, so the invited user has no obvious way to get the app and join the room.
+
+### Frequency
+Always
+
+### Environment
+
+| Field | Value |
+|-------|-------|
+| Platform | Android |
+| Device model | Huawei Mate 20 Pro |
+| OS version | Android 10, EMUI 12.0.0 |
+| Browser | Chrome |
+| App version | 2.1 |
