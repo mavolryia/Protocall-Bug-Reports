@@ -83,8 +83,6 @@ The app displays a loading spinner indefinitely and becomes completely unrespons
 
 ### Media
 
-<img src="images/bug-02-media.png" alt="Bug 2 — time picker in the room scheduling flow (17:07)" width="200">
-
 Original forum post: [full](images/bug-02-forum-post.png)
 
 ---
@@ -124,3 +122,7 @@ Always
 | OS version | Android 10, EMUI 12.0.0 |
 | Browser | None |
 | App version | 2.1 |
+
+### Media
+
+<img src="images/bug-03-media.png" alt="Bug 3 — time picker in the room scheduling flow (17:07)" width="200">
