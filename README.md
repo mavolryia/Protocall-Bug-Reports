@@ -6,6 +6,7 @@ Bug reports submitted to the **Protocall Bug Bounty Program** (messenger [protoc
 |---|-------|------|----------|
 | 1 | [No permission prompt when tapping camera icon with denied camera access](#bug-1-no-permission-prompt-when-tapping-camera-icon-with-denied-camera-access) | Aug 4 | Android |
 | 2 | [App freezes indefinitely when saving a room with an extremely long name (300+ characters), requires force close](#bug-2-app-freezes-indefinitely-when-saving-a-room-with-an-extremely-long-name-300-characters-requires-force-close) | Aug 5 | Android |
+| 3 | [Tapping on the time field re-opens the date calendar instead of the time picker when editing a scheduled room](#bug-3-tapping-on-the-time-field-re-opens-the-date-calendar-instead-of-the-time-picker-when-editing-a-scheduled-room) | — | Android |
 
 ---
 
@@ -85,3 +86,41 @@ The app displays a loading spinner indefinitely and becomes completely unrespons
 <img src="images/bug-02-media.png" alt="Bug 2 — time picker in the room scheduling flow (17:07)" width="200">
 
 Original forum post: [full](images/bug-02-forum-post.png)
+
+---
+
+## Bug 3: Tapping on the time field re-opens the date calendar instead of the time picker when editing a scheduled room
+
+### Title
+Tapping on the time field re-opens the date calendar instead of the time picker when editing a scheduled room
+
+### Description
+Tapping the time field re-opens the date calendar first, the user has to re-confirm the date (even though they didn't intend to change it) before being able to access the time picker again.
+
+### Steps to Reproduce
+1. Open the app
+2. Tap on "Rooms" icon
+3. Tap "Create Room"
+4. Tap "Schedule for later"
+5. Select a date in the calendar, tap "OK"
+6. Select a time on the clock screen, tap "OK"
+7. On the "Schedule New Room" screen, tap directly on the time field to edit it
+
+### Expected result
+Tapping the time field should open the time picker directly, allowing the user to change only the time without re-confirming the date.
+
+### Actual result
+Tapping the time field re-opens the date calendar first, the user has to re-confirm the date (even though they didn't intend to change it) before being able to access the time picker again.
+
+### Frequency
+Always
+
+### Environment
+
+| Field | Value |
+|-------|-------|
+| Platform | Android |
+| Device model | Huawei Mate 20 Pro |
+| OS version | Android 10, EMUI 12.0.0 |
+| Browser | None |
+| App version | 2.1 |
